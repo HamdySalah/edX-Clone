@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | edX</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+       <div class="image-container" style="display: flex;flex-direction: row; justify-content: flex-start; ">
+        <!-- <a href="index.html" class="image-link"> -->
+
+            <img align="left" src="assets/images/reg1.PNG" alt="Your Image" usemap="#map1">
+            <map name="map1">
+                <area shape="rect" coords="100,100,0,0" href="index.html" 
+                onMouseOver="self.status='Build new skills, advance your career. |edX.'; return true">
+            </map>
+            <div id="login-container">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <a href="#" id="show-login">Sign in</a>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <a href="#" id="show-register">Register</a>
+                    </label>
+                  </div>
+                <form id="login-form">
+                    <label style="margin-right:90px ;" for="username"> username or email</label>
+                    <input type="text" name="username" placeholder="Username" required>
+                    <label style="margin-right:150px ;" for="password">password</label>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button style="color: rgb(255, 255, 255) ;background-color: rgb(214, 96, 17); " class="btn btn-primary" type="submit">Submit form</button>
+                    <span style="color: rgb(95, 95, 95); cursor: pointer;">Forget Password</span> 
+                    <h3 align="left"><b>Or sign in with:</b></h3>
+                    <a href="index.html"><img src="assets/images/company1.PNG" alt=""></a><br><br>
+                    <button style="width: 110px;background-color: black;color: aliceblue;margin-right: 17px;" class="btn btn-secondary">Apple</button>
+                    <button style="width: 85px;background-color: rgb(0, 122, 236);color: aliceblue;" class="btn btn-secondary">Facebook</button>
+                    <button style="width: 110px;background-color: rgb(0, 172, 202);color: aliceblue;margin-right: 17px;margin-top: 10px;" class="btn btn-secondary">Google</button>
+                    <button style="width: 85px;background-color: rgb(73, 60, 60);color: aliceblue;margin-top: 10px;" class="btn btn-secondary">Microsoft</button>
+                </form>
+            </div>
+        
+            <div id="register-container" style="display: none;">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <a href="Register.html" id="show-login">Sign in</a>
+                    </label>
+                    <label class="btn btn-secondary">
+                        <a href="#" id="show-register">Register</a>
+                    </label>
+                  </div>
+                <form id="register-form">
+                    <input style="width: 350px;" class="form-control" type="text" placeholder="Full Name" required>
+                    <input style="width: 350px;" class="form-control" type="email" placeholder="Email" required>
+                    <input style="width: 350px;" class="form-control" type="text" placeholder="public username" required>
+                    <input style="width: 350px;" class="form-control" type="password" placeholder="Password" required>
+                    <select style="width: 350px;" class="form-control" name="country" id="c">
+                        <option value="Egypt">Egypt</option>
+                        <option value="USA">USA</option>
+                        <option value="Qatar">Qatar</option>
+                    </select><br>
+                    <input type="checkbox" name="checkbox" id="bla"> <label style="font-size: 8px;" for="checkbox">I agree that edX may send me marketing messages.</label>
+                    <br><br>
+<pre style="font-size: 10px;border: none;overflow: hidden;width: 400px;direction: ltr; background-color: white;">
+By creating an account you agree to the <a href="#">Terms of Service and Honor Code</a>
+and you acknowledge that edX and each Member process your personal data
+in accordance with the <a href="#">Privacy Policy</a>.                                                                  
+</pre>
+                    <button style="color: rgb(255, 255, 255) ;background-color: rgb(214, 96, 17);margin-right: 50px; " class="btn btn-primary" type="submit">Create an account for free</button>
+                    <h3 align="left"><b>Or sign in with:</b></h3>
+                    <a href="index.html"><img src="assets/images/company1.PNG" alt=""></a><br><br><br><br><br>
+                    <button style="width: 110px;background-color: black;color: aliceblue;margin-right: 17px;" class="btn btn-secondary">Apple</button>
+                    <button style="width: 85px;background-color: rgb(0, 122, 236);color: aliceblue;" class="btn btn-secondary">Facebook</button>
+                    <button style="width: 110px;background-color: rgb(0, 172, 202);color: aliceblue;margin-right: 17px;margin-top: 10px;" class="btn btn-secondary">Google</button>
+                    <button style="width: 85px;background-color: rgb(73, 60, 60);color: aliceblue;margin-top: 10px;" class="btn btn-secondary">Microsoft</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const loginContainer = document.getElementById("login-container");
+                const registerContainer = document.getElementById("register-container");
+                const showRegisterLink = document.getElementById("show-register");
+                const showLoginLink = document.getElementById("show-login");
+            
+                // Show the login form and hide the register form
+                showLoginLink.addEventListener("click", function() {
+                    loginContainer.style.display = "block";
+                    registerContainer.style.display = "none";
+                });
+            
+                // Show the register form and hide the login form
+                showRegisterLink.addEventListener("click", function() {
+                    loginContainer.style.display = "none";
+                    registerContainer.style.display = "block";
+                });
+            });
+            </script>
+</body>
+</html>

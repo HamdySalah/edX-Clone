@@ -1,0 +1,240 @@
+*{
+  outline: none;
+  padding: none;
+  margin: none;
+}
+.navbar{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  box-shadow: 0 0 11px #333;
+  color: black;
+  padding: 10px 0;        
+  margin: 0; 
+}
+
+.navbar-nav a{
+  font-size: 1.4em;
+  font-weight: bold;
+  color: rgb(20, 19, 19);
+}
+.navbar-brand img{
+  margin-top: -4px;
+}
+.navbar .btn{
+  display: flex;
+  align-items: flex-end;
+  margin-left: 180px;
+}
+.image-container {
+  text-align: center; 
+}
+
+.lead {
+  font-size: 18px; 
+  margin-top: 10px; 
+}
+.horizontal-scroll-container {
+  overflow-x: auto; 
+  white-space: nowrap; 
+  text-align: center; 
+}
+
+.horizontal-scroll-container a {
+  display: inline-block; 
+  margin-right: 10px;
+}
+
+.horizontal-scroll-container img {
+  max-height: 100px; 
+}
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #333; 
+}
+
+.arrow:hover {
+  background-color: #333; 
+  color: #fff; 
+}
+.arrow.left {
+  float: left;
+}
+
+.arrow.right {
+  float: right;
+}
+.intro-section{
+  width: 100%;
+  height: 260px;
+  margin-top: -20px;
+  padding: 5px;
+  background-color: rgba(232, 232, 232, 0.5);
+}
+.intro-section h1{
+  width: 35%;
+  margin-left: 50px;
+  font-weight: normal;
+}
+.intro-section button{
+  margin-left: 50px;
+  font-size: 1.6em;
+}
+.form-section{
+  width: 100%;
+  padding: 20px;
+  background-color: #b0e0e6;
+}
+.form-section p{
+  font-size: 1.8em;
+  color: #127;
+  margin-left: 30px;
+}
+.form-section input{
+  margin-left: 30px;
+  border: none;
+  font-size: 2.2em;
+  padding: 4px;
+  width: 60%;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.form-section .btn{
+  padding: 10px;
+  padding-left: 15px;
+  border-left: none;
+  color: #222;
+  background-color: #fff;
+  font-size: 1.5em;
+  margin-top: -14px;
+  margin-left: -5px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+ .form-section .btn:hover{
+  transition: all 0.4s linear;
+  background-color: #1D201E;
+  color: #fff;
+}
+.courses-section{
+  width: 100%;
+  padding-left: 50px;
+}
+.courses-section .row .card{
+  width:30%;
+  background-color: #fff;
+  box-shadow: 1px 2px 5px #444;
+  border-radius: 6px;
+  margin: 10px;
+  font-size: 1.6em;
+  padding: 20px;
+  color: #1D201E;
+  font-weight: bold;
+}
+.courses-section .btn{
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: #fff;
+  color: #1D201E;
+}
+.courses-section .btn:hover{
+  transition: all 0.4s linear;
+  background-color: #1D201E;
+  color: #fff;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.courses-section .btn:active{
+  transform: translateY(8px);
+}
+.footer{
+  padding-left: 50px;
+}
+.footer .row{
+  padding: 10px;
+  margin-top: 30px;
+  border: none;
+  border-top: 2px solid rgba(128, 128, 128, 0.6);
+}
+.footer .row li{
+  border-right: 1px solid rgba(128, 128, 128, 0.6);
+}
+.article {
+  color: #333;
+  padding: 20px;
+  font-size: large;
+  font-style: normal;
+}
+.search-container {
+  display: flex;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+}
+
+.search-container button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+main {
+  flex-grow: 1; 
+}
+#login-container, #register-container {
+  max-width: 400px;
+  margin: 3 auto;
+  text-align: center;
+  padding: 90px;
+}
+
+/* Style for the form elements */
+form {
+  margin-top: 100px;
+}
+
+/* Style for the link to toggle between login and register */
+a {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+input[type="text"],
+input[type="password"] {
+    width: 300px; /* Increase the width as needed */
+    padding: 10px; /* Add padding for spacing */
+    margin: 5px 0; /* Add margin for spacing between fields */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Increase font size */
+    outline: none; /* Remove default outline */
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    width: 150px; /* Adjust button width */
+    padding: 10px; /* Add padding for spacing */
+    margin-top: 10px; /* Add margin for spacing from the last input */
+    background-color: #007BFF; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 18px; /* Increase font size */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Style for the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
